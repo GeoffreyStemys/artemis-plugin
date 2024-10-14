@@ -1,0 +1,17 @@
+[versions]
+artemis = "2.37.0"
+micrometer = "1.13.5"
+jetty = "4.0.6"
+jakarta = "6.1.0"
+kotlinLogging = "3.0.5"
+
+[libraries]
+
+artemis = { module = "org.apache.activemq:artemis-server", version.ref = "artemis" }
+micrometerPrometheus = { module = "io.micrometer:micrometer-registry-prometheus", version.ref = "micrometer" }
+micrometer = { module = "io.micrometer:micrometer-core", version.ref = "micrometer" }
+
+jetty = { module = "org.eclipse.jetty.toolchain:jetty-servlet-api", version.ref = "jetty" }
+jakarta = { module = "jakarta.servlet:jakarta.servlet-api", version.ref = "jakarta" }
+
+kotlinLogging = { module = "io.github.microutils:kotlin-logging-jvm", version.ref = "kotlinLogging" }
